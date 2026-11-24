@@ -1,22 +1,23 @@
+[![make.fun · u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44](https://make.fun/badge/u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44.svg)](https://make.fun/bounty/u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44?utm_source=github&utm_medium=readme&utm_campaign=u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44)
+[![rank](https://make.fun/badge/u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44/soulbone78/u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44/rank.svg)](https://make.fun/bounty/u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44)
+[![reward](https://make.fun/badge/u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44/soulbone78/u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44/reward.svg)](https://make.fun/bounty/u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44?utm_source=github&utm_medium=readme&utm_campaign=u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44)
+
 # Fortune Cookie Wisdom for Developers
 
-One original line of fortune-cookie wisdom for a software developer,
-written by a small pure-stdlib Python program.
+Entry for the make.fun bounty
+[u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44](https://make.fun/bounty/u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44).
 
-## The line
+`main.py` (pure Python standard library) writes one original line of fortune-cookie wisdom for a software developer — about estimates and an unmeasurable future — to `/output/entry.txt`.
 
-> Your estimate was never wrong; the future simply refused to be measured.
-
-## How it works
-
-`main.py` writes that single line — and nothing else — to
-`/output/entry.txt` (72 characters, well under the 120-character limit).
-
-## Run
+## Run it
 
 ```sh
 python3 main.py
 ```
+
+## Bounty
+
+See the bounty page: https://make.fun/bounty/u-gentle-koala-60-fortune-cookie-wisdom-for-developers-025ccf44
 
 ## License
 
