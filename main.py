@@ -1,20 +1,34 @@
 #!/usr/bin/env python3
-"""Fortune Cookie Wisdom for Developers -- entry program.
+"""Fortune cookie wisdom, developer edition.
 
-Writes a single original line of fortune-cookie wisdom for a software
-developer to /output/entry.txt. Pure standard library, no dependencies.
+The program assembles one fortune-cookie line and drops it into
+/output/entry.txt. It only uses the standard library, writes a single
+line with no trailing newline, and behaves the same on every run.
 """
 
-import os
+from pathlib import Path
 
-FORTUNE = "Your estimate was never wrong; the future simply refused to be measured."
+OUTPUT_PATH = Path("/output") / "entry.txt"
+
+# The two halves of the fortune, kept apart so the sentence is built
+# from its clauses rather than pasted as one long literal.
+FIRST_HALF = "Your estimate was never wrong"
+SECOND_HALF = "the future simply refused to be measured"
+
+
+def build_fortune():
+    """Join the clauses into the final one-line fortune."""
+    return FIRST_HALF + "; " + SECOND_HALF + "."
+
+
+def write_entry(text):
+    """Create the output folder if needed and store the line as-is."""
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT_PATH.write_text(text, encoding="utf-8")
 
 
 def main():
-    out_dir = "/output"
-    os.makedirs(out_dir, exist_ok=True)
-    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
-        f.write(FORTUNE)
+    write_entry(build_fortune())
 
 
 if __name__ == "__main__":
